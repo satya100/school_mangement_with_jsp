@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	body{
+		text-align: center;
+		margin: 10%;
+		background-color: chartreuse;
+	}
+	button{
+		position: relative;
+		overflow: hidden;
+		padding: 10px;
+		color: black;
+		height: 0.5%;
+		width: 5cm;
+	}
+	button::after{
+		content: "";
+		display: block;
+		height: 4px;
+		width: 100%;
+		background-color: #2bd576;
+		transform: scalex(0);
+		transform-origin: center;
+	}
+	button:hover::after{
+		transform: scalex(1);
+	}
+</style>
+</head>
+<body>
+	<h1>Student register</h1>
+	<form action="register.jsp">
+		Name : <input type="text" name="name"><br><br>
+		Age : <input type="text" name="age"><br><br>
+		email : <input type="text" name="email"><br><br>
+		Password : <input type="password" name="pwd"><br><br>
+		Mobile no : <input type="text" name="mobile"><br><br>
+		
+		<!--<input type="submit" value="register">-->
+		<button value="register">register</button>
+	</form>
+	<h2>Already have an account <a href="login.html"> Login </a> </h2>
+</body>
+</html>

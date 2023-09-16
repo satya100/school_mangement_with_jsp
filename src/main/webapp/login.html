@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	body{
+			text-align: center;
+			margin: 15%;
+			background-color: blanchedalmond;
+		}
+	button{
+		position: relative;
+		overflow: hidden;
+		padding: 15px;
+		color: black;
+		height: 0.5%;
+		width: 5cm;
+	}
+	button::after{
+		content: "";
+		display: block;
+		height: 4px;
+		width: 100%;
+		background-color: #2bd576;
+		transform: scalex(0);
+		transform-origin: left;
+	}
+	button:hover::after{
+		transform: scalex(1);
+	}
+	input{
+		position: relative;
+	}
+</style>
+</head>
+<body>
+	<form action="login.jsp">
+	 Name : <input type="text" name="name"><br><br>
+	 Password : <input type="password" name="pwd"><br><br>
+	 
+	 <button value="login">login</button>
+	 
+ </form>
+ <h3>To create an account <a href="register.html"> Register </a></h3>
+</body>
+</html>
